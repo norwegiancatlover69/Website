@@ -1,1 +1,34 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cart</title>
+</head>
+<body>
+    <div class="options">
+        <input type="radio" value="pay_on_pickup" id="pickup">
+        <label for="pickup">Pay On Pickup</label><br>
+        <input type="radio" value="pay_now" id="now">
+        <label for="now">Pay Now</label>
+    </div>
+    <br>
+    <form class="form">
+        <label for="firstname">First name:</label>
+        <label for="lastname">Last name:</label><br>
+        <input type="text" id="firstname" name="firstname" placeholder="First Name">
+        <input type="text" id="lastname" name="lastname" placeholder="Last Name"><br>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="Email Adress"><br>
+        <label for="credit">Credit Card:</label><br>
+        <input id="credit" name="credit" type="tel" inputmode="numeric" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
+        <input id="credit-year" name="credit-year" type="tel" inputmode="numeric" maxlength="7" placeholder="MM / YY" required>
+        <input id="credit-cvc" name="credit-cvc" type="tel" inputmode="numeric" maxlength="4" placeholder="CVC" required><br>
+        <label for="billing">Billing Address:</label><br>
+        <input type="text" id="billing" name="billing" placeholder="Address Line 1:" required><br>
+        <input type="text" id="billing-two" name="billing-two" placeholder="Address Line 2:"><br>
+        <input style="font-family: passionone;" type="submit" id="submit" name="submit" value="CONFIRM ORDER">
+    </form>
+</body>
+</html>
