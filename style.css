@@ -1,0 +1,40 @@
+@font-face{
+    font-family: passionone;
+    src: url(fonts/passionone_regular.ttf);
+}
+
+body{
+    font-family: passionone;
+}
+
+.form::placeholder{
+    font-family: passionone;
+}
+
+.social_media_buttons{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#instagram{
+    margin: 0;
+    padding: 0;
+    border-style: hidden;
+    background-color: inherit;
+}
+
+#twitter{
+    margin: 0;
+    padding: 0;
+    border-style: hidden;
+    background-color: inherit;
+}
+
+#tiktok{
+    margin: 0;
+    padding: 0;
+    border-style: hidden;
+    background-color: inherit;
+}
