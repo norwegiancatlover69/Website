@@ -1,29 +1,32 @@
 <!doctype html>
 <html>
   <head>
-    <title>Our Funky HTML Page</title>
+    <title>Apply</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id="application form">
       <h1></h1>
-      
-      <label for="fullName"><b>Full name:</b></label>
-      <input type="text" placeholder="First name, Last Name" name="email" id="email" required>
+      <form action="applyConfirm.html">
+        <label for="fullName"><b>Full name:</b></label>
+        <input type="text" placeholder="First name, Last Name" name="fullName" id="fullName" required>
+  
+        <label for="email"><b>Email:</b></label>
+        <input type="email" placeholder="Email Adress" name="email" id="email" required>
+  
+        <label for="tel"><b>Phone Number: </b></label>
+        <input type="tel" placeholder="+47 000 00 000" name="tel" id="tel" required>
+  
+        
+        <label for="adress"><b>Adress:</b></label>
+        <input type="text" placeholder="Enter your adress" name="adress" id="adress" required>
+  
+        
+        <label for="aboutYourself"><b>Write about why you want to work at Frydays</b></label>
+        <input type="text" name="aboutYourself" id="aboutYourself" required>
 
-      <label for="email"><b>Email:</b></label>
-      <input type="email" placeholder="Email Adress" name="email" id="email" required>
-
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-      
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-      
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" id="email" required>
-   
+        <input type="submit">
+      </form>
     </div>
     
   </body>
