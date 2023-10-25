@@ -5,6 +5,8 @@
 
 body{
     font-family: passionone;
+    
+    background-color: #DB8249;
 }
 
 .form::placeholder{
