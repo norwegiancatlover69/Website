@@ -8,11 +8,13 @@ body{
     background-color: #DB8249;
 }
 
+/* CART */
+
 .form::placeholder{
     font-family: passionone;
 }
 
-
+/* FOOTER */
 
 #instagram{
     margin: 0;
@@ -67,3 +69,33 @@ body{
     margin-bottom: 15%;
 }
 
+/* STUDENT DISCOUNT */
+
+.student_discount{
+    margin: auto;
+    width: 50%;
+}
+
+.student_discount_box{
+    margin: auto;
+    position: relative;
+    background-color: #D9D9D9;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 40vw;
+    border-radius: 10px;
+}
+
+#student_title{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10%;
+    text-decoration: underline;
+    color: white;
+    }
+
+#student_h4{
+    margin-left: 5%;
+}
