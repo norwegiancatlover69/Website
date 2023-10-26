@@ -5,7 +5,6 @@
 
 body{
     font-family: passionone;
-    
     background-color: #DB8249;
 }
 
@@ -13,12 +12,7 @@ body{
     font-family: passionone;
 }
 
-.social_media_buttons{
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    cursor: pointer;
-}
+
 
 #instagram{
     margin: 0;
@@ -40,3 +34,36 @@ body{
     border-style: hidden;
     background-color: inherit;
 }
+
+.footer{
+    position: fixed;
+    bottom: 0; 
+    height: 14.58501208702659vh;
+    width: 100vw;
+    background-color: #D9D9D9;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.copyright{
+    margin-left: 40px;
+}
+
+.social_media{
+    font-size: 13px;
+    margin-right: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.social_media_buttons{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;  
+    margin-bottom: 15%;
+}
+
