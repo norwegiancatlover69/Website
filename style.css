@@ -151,3 +151,13 @@ body{
     border-top: solid 2px;
     color: #DB8249;
   }
+
+.burger{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+  }
+
+  .meny{
+   text-align: center;
+  }
