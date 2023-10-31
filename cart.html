@@ -7,39 +7,44 @@
     <title>Cart</title>
 </head>
 <body>
-    <div class="options">
-        <input type="radio" value="pay_on_pickup" id="pickup">
-        <label for="pickup">Pay On Pickup</label><br>
-        <input type="radio" value="pay_now" id="now">
-        <label for="now">Pay Now</label>
-    </div>
-    <br>
-    <form class="form">
-        <label for="firstname">First name:</label>
-        <label for="lastname">Last name:</label><br>
-        <input type="text" id="firstname" name="firstname" placeholder="First Name">
-        <input type="text" id="lastname" name="lastname" placeholder="Last Name"><br>
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" placeholder="Email Adress"><br>
-        <label for="credit">Credit Card:</label><br>
-        <input id="credit" name="credit" type="tel" inputmode="numeric" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
-        <input id="credit-year" name="credit-year" type="tel" inputmode="numeric" maxlength="7" placeholder="MM / YY" required>
-        <input id="credit-cvc" name="credit-cvc" type="tel" inputmode="numeric" maxlength="4" placeholder="CVC" required><br>
-        <label for="billing">Billing Address:</label><br>
-        <input type="text" id="billing" name="billing" placeholder="Address Line 1:" required><br>
-        <input type="text" id="billing-two" name="billing-two" placeholder="Address Line 2:"><br>
-        <input style="font-family: passionone;" type="submit" id="submit" name="submit" value="CONFIRM ORDER">
-    </form>
-    <div class="footer">
-        <p class="copyright">Copyright © Frydays.com - All Rights Reserved</p>
-        <div class="social_media">
-            <p>Follow us on social media!</p>
-            <div>
-                <button id="instagram"><img class="social_media_buttons" src="img/instagram-icon.png" alt="Instagram"></button>
-                <button id="twitter"><img class="social_media_buttons" src="img/twitter-icon.png" alt="Twitter"></button>
-                <button id="tiktok"><img class="social_media_buttons" src="img/tiktok-icon.png" alt="Tiktok"></button>
-            </div>
+    <div class="background-gray">
+        <div class="options">
+            <input type="radio" value="pay_on_pickup" id="pickup">
+            <label for="pickup">Pay On Pickup</label><br>
+            <input type="radio" value="pay_now" id="now">
+            <label for="now">Pay Now</label>
         </div>
+        <br>
+        <form class="form">
+
+            <div id="firstname">
+                <label for="firstname">First name:</label><br>
+                <input type="text" name="firstname" placeholder="First Name" size="40" required>
+            </div>
+
+            <div id="lastname">
+                <label for="lastname">Last name:</label><br>
+                <input type="text" name="lastname" placeholder="Last Name" size="40" required><br>
+            </div>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Email Adress" required><br>
+
+            <div id="credit-card">
+                <label for="credit">Credit Card:</label><br>
+                <input id="credit" name="credit" type="tel" inputmode="numeric" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
+                <input id="credit-year" name="credit-year" type="tel" inputmode="numeric" maxlength="7" placeholder="MM / YY" required>
+                <input id="credit-cvc" name="credit-cvc" type="tel" inputmode="numeric" maxlength="4" placeholder="CVC" required><br>
+            </div>
+
+            <div id="billing-address">
+                <label for="billing">Billing Address:</label><br>
+                <input type="text" id="billing" name="billing" placeholder="Address Line 1:" required><br>
+                <input type="text" id="billing-two" name="billing-two" placeholder="Address Line 2:"><br>
+                <input style="font-family: passionone;" type="submit" id="submit" name="submit" value="CONFIRM ORDER">
+            </div>
+
+        </form>
     </div>
 </body>
 </html>
