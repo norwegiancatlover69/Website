@@ -120,3 +120,34 @@ body{
 #student_h4{
     margin-left: 5%;
 }
+
+.sidenav {
+    text-align: center;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 190px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 0; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #c7392c; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.sidenav a {
+    border: solid 2px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #DB8249;
+    display: block;
+  }
+
+  .ham{
+    margin-top: 20px;
+    border-top: solid 2px;
+    color: #DB8249;
+  }
