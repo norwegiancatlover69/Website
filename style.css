@@ -23,6 +23,76 @@ body{
     
 }
 
+.name-input{
+    width: 30vw;
+}
+
+#names{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#email{
+    display: flex;
+    flex-direction: column;
+}
+
+#credit-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+#credit{
+    width: 50vw;
+}
+
+#billing-address{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    background-color: #D9D9D9;
+    border: none;
+    font-family: passionone;
+    border-radius: 5px;
+    font-size: large;
+    padding: 5px 8px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    
+}
+
+#submit{
+    background-color:#DB8249;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 10px;
+    position: relative;
+}
+
+#submit-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.options{
+    margin-left: 4%;
+    display: block;
+    position: relative;
+}
+
+
+.background-gray{
+    background-color: #D9D9D9;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    height: 100vh;
+}
+
 
 .options{
     margin-left: 4%;
@@ -68,7 +138,20 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
+.footer-cart{
+    position: fixed;
+    bottom: 0; 
+    height: 14.58501208702659vh;
+    width: 100vw;
+    background-color: #D9D9D9;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid;
+    border-color: #DB8249;
 }
 
 .copyright{
