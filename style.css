@@ -267,7 +267,7 @@ input{
 .drinks {
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 110px;
   }
 
   .menu{
@@ -282,5 +282,8 @@ input{
     width:230px;
 }
 .drinks .box img {
-    width:140px;
+    width:120px;
+}
+.drinks .box button {
+    margin-bottom: 70px;
 }
