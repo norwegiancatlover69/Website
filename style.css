@@ -5,9 +5,29 @@
 
 body{
     font-family: passionone;
+    letter-spacing: 2px;
+    color:white;
     background-color: #DB8249;
-    margin: 0; 
+    margin: 0;
+    overflow-x: hidden; 
 }
+
+h1 {
+    color:white;
+    font-size:70px;
+    text-decoration: underline;
+    text-align: center;
+}
+h2 {
+    font-size:45px;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 20px;
+}
+
 
 /* CART */
 
@@ -129,8 +149,9 @@ input{
 }
 
 .footer{
-    position: fixed;
-    bottom: 0; 
+    position: absolute;
+    z-index: 1;
+    margin-top:auto;
     height: 14.58501208702659vh;
     width: 100vw;
     background-color: #D9D9D9;
@@ -204,10 +225,13 @@ input{
     margin-left: 5%;
 }
 
+/*TOP NAVBAR*/
+
+/*MENU*/
 .sidenav {
     text-align: center;
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 190px; /* Set the width of the sidebar */
+    width: 15%; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 0; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -229,18 +253,34 @@ input{
     display: block;
   }
 
+  /*Hva er dette?*/
   .ham{
     margin-top: 20px;
     border-top: solid 2px;
     color: #DB8249;
   }
 
-.burger{
+.burger,
+.vegan,
+.chicken,
+.fries,
+.drinks {
     display: flex;
     justify-content: center;
     gap: 150px;
   }
 
-  .meny{
+  .menu{
    text-align: center;
+   width:85%;
   }
+
+.burger .box img,
+.vegan .box img,
+.chicken .box img,
+.fries .box img {
+    width:230px;
+}
+.drinks .box img {
+    width:140px;
+}
