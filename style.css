@@ -228,7 +228,6 @@ input{
 /*TOP NAVBAR*/
 .topnav {
     position:sticky;
-    /*height:15vh;*/
     width:100vw;
     background-color: white;
     display:grid;
