@@ -227,12 +227,13 @@ input{
 
 /*TOP NAVBAR*/
 .topnav {
-    position:sticky;
+    position:static;
     width:100vw;
     background-color: white;
     display:grid;
     grid-template-columns: 19vw 81vw;
     grid-template-rows: 100%;
+    z-index: 2;
 }
 .logo {
     height:14vh;
