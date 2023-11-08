@@ -161,16 +161,7 @@ input{
     align-items: center;
 }
 
-.footer-cart{
-    position: fixed;
-    bottom: 0; 
-    height: 14.58501208702659vh;
-    width: 100vw;
-    background-color: #D9D9D9;
-    font-size: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#footer-cart{
     border-top: 2px solid;
     border-color: #DB8249;
 }
