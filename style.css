@@ -194,6 +194,10 @@ input{
     margin-bottom: 15%;
 }
 
+#scrollFooters {
+    position:relative;
+}
+
 /* STUDENT DISCOUNT */
 
 .student_discount{
@@ -227,7 +231,7 @@ input{
 
 /*TOP NAVBAR*/
 .topnav {
-    position:static;
+    position:relative;
     width:100vw;
     background-color: white;
     display:grid;
@@ -347,7 +351,4 @@ input{
 }
 .drinks .box button {
     margin-bottom: 70px;
-}
-#menuFooter {
-    position:relative;
 }
