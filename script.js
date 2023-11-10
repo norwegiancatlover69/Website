@@ -1,3 +1,4 @@
+//Title names to identify current file
 const tag = document.getElementsByTagName("title");
 const title = tag[0].innerHTML;
 
@@ -22,10 +23,12 @@ else {
     const footer1Content = document.getElementById("footer1").innerHTML;
     sessionStorage.setItem("footerSave", footer1Content);
 }
+//Cart needs extra CSS
 if (title == "Cart") {
     const cart = document.getElementById("footer");
     cart.setAttribute("id", "footer-cart");
 }
+//Every pages with scroll need extra CSS
 if (title == "Menu" || title == "Locations" || title == "Work At Frydays" || title == "About Us" || title == "Application Form") {
     const file = document.getElementById("footer");
     file.setAttribute("id", "scrollFooters");
