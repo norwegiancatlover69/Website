@@ -83,3 +83,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " activeDot";
 } 
+
+// Updating counter on total menu items
+counter = 0; 
+function itemAmount() {
+    counter += 1; 
+    document.getElementById("cartItems").innerHTML = counter; 
+}
