@@ -567,10 +567,29 @@ input{
     padding: 5vh 0 2vh 0;
 }
 .l6 {
-    grid-column: 6;
-    padding: 3vh 0 2vh 0;
+
+    grid-column: 8;
+    padding: 25px 0 0 0;
 }
 
+.leftnav {
+    cursor:pointer;
+    font-size: 50px;
+    display:none;
+}
+
+/* HIDDEN SIDEBAR */
+
+
+
+@media only screen and (max-width: 700px) {
+    .topnav {
+        display: none;
+    }
+    .leftnav {
+        display:block;
+    }
+}
 /*MENU*/
 .sidenav {
     text-align: center;
