@@ -64,6 +64,78 @@ h3 {
 .costumerService p {
     width:50vw;
 }
+/* HOMEPAGE */
+.homeImg{
+    border-radius: 16px;
+    width: 100%;
+}
+.slideshow-container {
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    font-size: 60px;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dotContainer{
+    position: absolute;
+    left: 50%; 
+    bottom: 0px;
+    transform: translate(-50%, -50%); 
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: 1;
+}
+.activeDot, .dot:hover {
+    background-color: black;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+  
 
 /* WORK */ 
 
@@ -364,7 +436,7 @@ input{
     position: absolute;
     z-index: 1;
     bottom:0;
-    height: 100px;
+    height: 12.5vh;
     width: 100vw;
     background-color: #D9D9D9;
     font-size: 15px;
@@ -391,7 +463,6 @@ input{
 .social_media{
     font-size: 13px;
     margin-right: 40px;
-    margin-top:-10px;
     justify-content: center;
     text-align: center;
 }
@@ -409,6 +480,8 @@ input{
 .student_discount{
     margin: auto;
     width: 50%;
+    color: black;
+    font-weight: lighter;
 }
 
 .student_discount_box{
@@ -426,7 +499,7 @@ input{
 #student_title{
     font-size: 40px;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 8vh;
     text-decoration: underline;
     color: white;
     }
@@ -440,61 +513,61 @@ input{
     position:relative;
     width:100vw;
     background-color: white;
-    z-index: 2;
     display:grid;
-    grid-template-columns: 13.5vw 5.5vw 13.5vw 13.5vw 13.5vw 13.5vw 13.5vw 13.5vw;
-    grid-template-rows: 100px;
+    grid-template-columns: 19vw 81vw;
+    grid-template-rows: 100%;
+    z-index: 2;
+}
+.logo {
+    height:14vh;
+    width:19vw;
+    grid-column:1;
+    margin-left:.4vw;
+}
+
+.links {
+    display:grid;
+    grid-template-columns: 13vw 13vw 13vw 13vw 13vw 13vw;
+    grid-template-rows: 15vh;
+    padding-left:2vw;
     grid-column:2;   
 }
 
-.topnav a {
+.links a {
     color: #DB8249;
     font-size:140%;
     text-decoration: none;
     text-align:center;
-    width:100%;
-    transition: transform .3s ease;
+    width:13vw;
 }
 
-.logoLink:hover .logo {
-    transform: scale(1.15);
-}
-
-.logo {
-    height:80px;
-    grid-column:1;
-    margin-left:5px;
-    transition: transform .3s ease;
-    margin-top: 6px;
-    margin-left:14px;
-}
-
-.topnav a:hover:not(.logoLink) {
-    transform: scale(1.15);
+.links a:hover {
+    background-color: #D9D9D9;
 }
 .l1 {
-    grid-column: 3;
-    padding: 35px 0 0 0;
+    grid-column: 1;
+    padding: 5vh 0 2vh 0;
 }
 .l2 {
-    grid-column: 4;
-    padding: 35px 0 0 0;
+    grid-column: 2;
+    padding: 5vh 0 2vh 0;
 }
 .l3 {
-    grid-column: 5;
+    grid-column: 3;
     padding: -1vh 0 -1vh 0;
-    padding: 25px 0 0 0;
+    padding: 3vh 0 2vh 0;
 }
 .l4 {
-    grid-column: 6;
-    padding: 35px 0 0 0;
+    grid-column: 4;
+    padding: 5vh 0 2vh 0;
 
 }
 .l5 {
-    grid-column: 7;
-    padding: 35px 0 0 0;
+    grid-column: 5;
+    padding: 5vh 0 2vh 0;
 }
 .l6 {
+
     grid-column: 8;
     padding: 25px 0 0 0;
 }
@@ -517,7 +590,6 @@ input{
         display:block;
     }
 }
-
 /*MENU*/
 .sidenav {
     text-align: center;
