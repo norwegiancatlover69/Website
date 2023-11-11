@@ -64,6 +64,78 @@ h3 {
 .costumerService p {
     width:50vw;
 }
+/* HOMEPAGE */
+.homeImg{
+    border-radius: 16px;
+    width: 100%;
+}
+.slideshow-container {
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    font-size: 60px;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dotContainer{
+    position: absolute;
+    left: 50%; 
+    bottom: 0px;
+    transform: translate(-50%, -50%); 
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: 1;
+}
+.activeDot, .dot:hover {
+    background-color: black;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+  
 
 /* WORK */ 
 
@@ -239,6 +311,7 @@ textarea{
     background-color: #DB8249;
     border-radius: 16px;
 }
+
 
 
 /* CART */
