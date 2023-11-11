@@ -65,6 +65,182 @@ h3 {
     width:50vw;
 }
 
+/* WORK */ 
+
+#headerWork{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    
+    font-size: xx-large;
+}
+
+#headerWork>p{
+    max-width: 35%;
+    margin: auto;
+}
+
+#offerWork{
+    text-align: center;
+    background-color: #D9D9D9;
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+#offerWork>div{
+    margin: auto;
+    
+}
+
+#offerWork>div>ul{
+    margin-left: 35%;
+    text-align: left;
+    
+    
+}
+
+#offerWork>div>ul>li{
+    font-size:45px;
+    font-weight: lighter;
+    
+    
+}
+
+#offerWork>div>img{
+    border-style: solid;
+    border-radius: 10px;
+    width:700px;
+    margin: auto;
+    
+}
+#listOfPositions{
+    margin-bottom: 20px;
+}
+#availPosit{
+    text-align: center;
+}
+
+#positionContainer{
+    margin-left: 13%;
+    margin-right: 13%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.position{
+    color: black;
+    background-color: #D9D9D9;
+    width: 400px;
+    border-style: solid;
+    border-color: #D9D9D9;
+    border-width: 10px;
+    border-radius: 10px;
+    padding-left: 2px;
+    margin: 1%;
+    
+}
+
+.position>h4{
+    font-size: x-large;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0;
+    
+}
+
+.link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/* APPLICATION FORM */
+#applicationForm{
+    background-color: white;
+    color: black;
+    max-width: 70%;
+    width: 1200px;
+    min-width: 600px;
+    margin: auto;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: large;
+
+
+}
+
+#applicationForm>div{
+    margin: 75px 100px 75px 100px;
+
+}
+
+#applicationForm>div>h1{
+    color: black;
+    text-decoration: none;
+    text-align: left;
+}
+
+#applicationForm>div>form>input{
+    width: 100%;
+    padding: 20px 8px;
+    margin-bottom: 35px;
+    
+}
+
+#applicationForm>div>form>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#applicationForm>div>form>div>div{
+    width: 46%;
+}
+
+
+#applicationForm>div>form>div>div>input{
+    width: 100%;
+    padding: 20px 8px;
+    margin-bottom: 35px;
+}
+
+#applicationForm>div>form>div>div>label>p{
+    width:100%;
+    margin:0px;
+    
+}
+
+textarea{
+    background-color: #D9D9D9;
+    border: none;
+    font-family: passionone;
+    border-radius: 5px;
+    font-size: large;
+    padding: 5px 8px;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    width: 100%;
+    resize: none;
+    margin-bottom: 35px;
+}
+
+#applicationForm>div>form>div>input{
+    width: 20%;
+    height: 50px;
+    background-color: #DB8249;
+    border-radius: 16px;
+}
+
+
 /* CART */
 
 .form::placeholder{
