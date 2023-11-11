@@ -65,6 +65,10 @@ h3 {
     width:50vw;
 }
 /* HOMEPAGE */
+.homeImg{
+    border-radius: 16px;
+    width: 100%;
+}
 .slideshow-container {
     max-width: 1500px;
     position: relative;
