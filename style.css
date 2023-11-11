@@ -364,7 +364,7 @@ input{
     position: absolute;
     z-index: 1;
     bottom:0;
-    height: 12.5vh;
+    height: 100px;
     width: 100vw;
     background-color: #D9D9D9;
     font-size: 15px;
@@ -391,6 +391,7 @@ input{
 .social_media{
     font-size: 13px;
     margin-right: 40px;
+    margin-top:-10px;
     justify-content: center;
     text-align: center;
 }
@@ -439,63 +440,77 @@ input{
     position:relative;
     width:100vw;
     background-color: white;
-    display:grid;
-    grid-template-columns: 19vw 81vw;
-    grid-template-rows: 100%;
     z-index: 2;
-}
-.logo {
-    height:14vh;
-    width:19vw;
-    grid-column:1;
-    margin-left:.4vw;
-}
-
-.links {
     display:grid;
-    grid-template-columns: 13vw 13vw 13vw 13vw 13vw 13vw;
-    grid-template-rows: 15vh;
-    padding-left:2vw;
+    grid-template-columns: 13.5vw 5.5vw 13.5vw 13.5vw 13.5vw 13.5vw 13.5vw 13.5vw;
+    grid-template-rows: 100px;
     grid-column:2;   
 }
 
-.links a {
+.topnav a {
     color: #DB8249;
     font-size:140%;
     text-decoration: none;
     text-align:center;
-    width:13vw;
+    width:100%;
+    transition: transform .3s ease;
 }
 
-.links a:hover {
-    background-color: #D9D9D9;
+.logoLink:hover .logo {
+    transform: scale(1.15);
+}
+
+.logo {
+    height:80px;
+    grid-column:1;
+    margin-left:5px;
+    transition: transform .3s ease;
+    margin-top: 6px;
+    margin-left:14px;
+}
+
+.topnav a:hover:not(.logoLink) {
+    transform: scale(1.15);
 }
 .l1 {
-    grid-column: 1;
-    padding: 5vh 0 2vh 0;
+    grid-column: 3;
+    padding: 35px 0 0 0;
 }
 .l2 {
-    grid-column: 2;
-    padding: 5vh 0 2vh 0;
+    grid-column: 4;
+    padding: 35px 0 0 0;
 }
 .l3 {
-    grid-column: 3;
+    grid-column: 5;
     padding: -1vh 0 -1vh 0;
-    padding: 3vh 0 2vh 0;
+    padding: 25px 0 0 0;
 }
 .l4 {
-    grid-column: 4;
-    padding: 5vh 0 2vh 0;
+    grid-column: 6;
+    padding: 35px 0 0 0;
 
 }
 .l5 {
-    grid-column: 5;
-    padding: 5vh 0 2vh 0;
+    grid-column: 7;
+    padding: 35px 0 0 0;
 }
 .l6 {
-    grid-column: 6;
-    padding: 3vh 0 2vh 0;
+    grid-column: 8;
+    padding: 25px 0 0 0;
 }
+
+/*@media only screen and (max-width: 1100px) {
+    .logo {
+        height:65px;
+        margin-top:15px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .topnav {
+        display: none;
+    }
+}*/
 
 /*MENU*/
 .sidenav {

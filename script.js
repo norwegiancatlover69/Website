@@ -1,3 +1,4 @@
+//COPY TOPNAV AND FOOTER
 //Title names to identify current file
 const tag = document.getElementsByTagName("title");
 const title = tag[0].innerHTML;
@@ -33,3 +34,19 @@ if (title == "Menu" || title == "Locations" || title == "Work At Frydays" || tit
     const file = document.getElementById("footer");
     file.setAttribute("id", "scrollFooters");
 }
+
+//TOPNAV MEDIA QUERIES
+function changeImg(check) {
+    if (check.matches) { 
+        console.log(document.getElementById("logo"));
+        document.getElementById("logo").setAttribute("src", "img/frydaysNew.png");
+    }
+    else {
+        console.log(document.getElementById("logo"));
+        document.getElementById("logo").setAttribute("src", "img/frydays.png");
+    }
+}
+  
+var check = window.matchMedia("(max-width: 1100px)");
+changeImg(check);
+check.addListener(changeImg);
