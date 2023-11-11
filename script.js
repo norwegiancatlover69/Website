@@ -4,26 +4,11 @@ const tag = document.getElementsByTagName("title");
 const title = tag[0].innerHTML;
 
 //TOPNAV
-//Paste from save
-if (sessionStorage.getItem("topNavSave") && title != "Homepage") {
-    document.getElementById("topnav").innerHTML = sessionStorage.getItem("topNavSave");
-}
-//Copy & save
-else {
-    const topNav1Content = document.getElementById("topnav1").innerHTML;
-    sessionStorage.setItem("topNavSave", topNav1Content);
-}
+document.getElementById("topnav").innerHTML = '<a class="logoLink" href="homepage.html"><img id="logo" class="logo" src="img/frydays.png" alt="Frydays logo"></a><a class="l1" href="menu.html">Order Now</a><a class="l2" href="locations.html">Locations</a><a class="l3" href="work.html">Work at<br>Frydays</a><a class="l4" href="contact.html">Contact Us</a><a class="l5" href="about.html">About Us</a><a class="l6" href="studDiscount.html">Student<br>Discount</a>';
 
 //FOOTER
-//Paste from save
-if (sessionStorage.getItem("footerSave") && title != "Homepage") {
-    document.getElementById("footer").innerHTML = sessionStorage.getItem("footerSave");
-}
-//Copy & save
-else {
-    const footer1Content = document.getElementById("footer1").innerHTML;
-    sessionStorage.setItem("footerSave", footer1Content);
-}
+document.getElementById("footer").innerHTML = '<p class="copyright">Copyright © Frydays.com - All Rights Reserved</p><div class="social_media"><p>Follow us on social media!</p><div><button id="instagram"><img class="social_media_buttons" src="img/instagram-icon.png" alt="Instagram"></button><button id="twitter"><img class="social_media_buttons" src="img/twitter-icon.png" alt="Twitter"></button><button id="tiktok"><img class="social_media_buttons" src="img/tiktok-icon.png" alt="Tiktok"></button></div></div>';
+
 //Cart needs extra CSS
 if (title == "Cart") {
     const cart = document.getElementById("footer");
