@@ -1,3 +1,7 @@
+//Title names to identify current file
+const tag = document.getElementsByTagName("title");
+const title = tag[0].innerHTML;
+
 //TOPNAV
 document.getElementById("topnav").innerHTML = '<span class="closebtn" id="closebtn" onclick="closeNav()">&times;</span><a class="logoLink" id="logoLink" onclick="closeNav()" href="homepage.html"><img id="logo" class="logo" src="img/frydays.png" alt="Frydays logo"></a><a id="l1" href="menu.html">Order Now</a><a id="l2" href="locations.html">Locations</a><a id="l3" href="work.html">Work at<br>Frydays</a><a id="l4" href="contact.html">Contact Us</a><a id="l5" href="about.html">About Us</a><a id="l6" href="studDiscount.html">Student<br>Discount</a>';
 
