@@ -19,21 +19,34 @@ if (title == "Cart") {
 //TOPNAV MEDIA QUERIES
 function changeImg(check) {
     if (check.matches) { 
-        console.log(document.getElementById("logo"));
         document.getElementById("logo").setAttribute("src", "img/frydaysNew.png");
     }
     else {
-        console.log(document.getElementById("logo"));
         document.getElementById("logo").setAttribute("src", "img/frydays.png");
     }
 }
-  
 var check = window.matchMedia("(max-width: 1100px)");
 changeImg(check);
 check.addListener(changeImg);
 
+function changeNav(check2) {
+    if (check2.matches) {
+        document.getElementById("topnav").setAttribute("id", "leftnav");
+    }
+    else if (document.getElementById("leftnav")) {
+        document.getElementById("leftnav").setAttribute("id", "topnav");
+    }
+}
+var check2 = window.matchMedia("(max-width: 700px)");
+changeNav(check2);
+check2.addListener(changeNav);
 
-
+function openNav() {
+    document.getElementById("leftnav").style.width = "100vh";
+}
+function closeNav() {
+    document.getElementById("leftnav").style.width = "0";
+}
 
 // Slideshow CSS
 let slideIndex = 1;
