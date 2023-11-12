@@ -803,3 +803,91 @@ input{
 .drinks .box button {
     margin-bottom: 70px;
 }
+
+/*LOCATIONS*/
+
+#headerLoc {
+    background-color: #DB8249;
+    color: white;
+    padding: 0;
+}
+
+.loc_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    margin: 50px;
+}
+
+.box_loc_content {
+    background-color: #D9D9D9;
+    padding-top: 0;
+    padding-right: 150px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    border-radius: 10px;
+    position: relative; /*Lager hver boks til egen boks, og hvert element i boksen relativ til den */
+}
+
+.box_loc_titleimg p{
+    color: #E25F00;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+
+}
+
+.box_loc_titleimg img {
+    width: 350px; 
+    height:200px; 
+    border-radius: 8px;
+    border: 2px solid #E25F00;
+}
+
+.additional_info{
+    color: black;
+    text-align: left;
+    font-size: 15px;
+    width: 350px;
+    padding-bottom: 0;
+}
+
+.opening_hours {
+    color: #E25F00;
+    position: absolute;
+    font-size: 30px;
+    top: 10px;
+    right: 0;
+    left: 500px;
+    width: 200px;
+}
+
+.opening_hours p{
+    color: #E25F00;
+    margin-bottom: 10px;
+}
+.opening_hours div p{
+    color: black;
+    position: relative;
+    font-size: 20px;
+    left: 30px;
+    margin: 5px;
+    
+}
+
+.tlf{
+    color: black;
+    position: relative;
+    font-size: 30px;
+    margin-top: 40px;
+
+}
+.footer {
+    background-color: #D9D9D9;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
