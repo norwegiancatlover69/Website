@@ -14,11 +14,7 @@ if (title == "Cart") {
     const cart = document.getElementById("footer");
     cart.setAttribute("id", "footer-cart");
 }
-//Every pages with scroll need extra CSS
-if (title == "Menu" || title == "Locations" || title == "Work At Frydays" || title == "About Us" || title == "Application Form") {
-    const file = document.getElementById("footer");
-    file.setAttribute("id", "scrollFooters");
-}
+
 
 //TOPNAV MEDIA QUERIES
 function changeImg(check) {
