@@ -8,125 +8,127 @@
 </head>
 <body>
     <div class="topnav" id="topnav"></div>
-    <div class="sidenav">
-        <a class="cartButton" href="cart.html">
-            <img class="cartImg" src="img/cart.PNG" alt="Cart">
-            <p>Go To Cart</p>
-            <div id="cartItems" class="cartItems">0</div>
-        </a>
-        <a href="#burger">Hamburgers</a>
-        <a href="#vegan">Vegan</a>
-        <a href="#chicken">Chicken</a>
-        <a href="#fries">Fries</a>
-        <a href="#drinks">Drinks</a>
-    </div>
-    <div class="menu">
-        <h1>MENU</h1>
-
-        <h2>Hamburgers</h2>
-        <div class = "burger" id="burger">
-            <div class="box">
-                <h3>Classic Burger</h3>
-                <img src="img/classicB.png" alt="Classic Burger">
-                <p>15$</p>
-                <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+    <main>
+        <div class="sidenav">
+            <a class="cartButton" href="cart.html">
+                <img class="cartImg" src="img/cart.PNG" alt="Cart">
+                <p>Go To Cart</p>
+                <div id="cartItems" class="cartItems">0</div>
+            </a>
+            <a href="#burger">Hamburgers</a>
+            <a href="#vegan">Vegan</a>
+            <a href="#chicken">Chicken</a>
+            <a href="#fries">Fries</a>
+            <a href="#drinks">Drinks</a>
+        </div>
+        <div class="menu">
+            <h1>MENU</h1>
+    
+            <h2>Hamburgers</h2>
+            <div class = "burger" id="burger">
+                <div class="box">
+                    <h3>Classic Burger</h3>
+                    <img src="img/classicB.png" alt="Classic Burger">
+                    <p>15$</p>
+                    <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <h3>Juicy Double</h3>
+                    <img src="img/juicy.png" alt="Juicy Double">
+                    <p>15$</p>
+                    <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <h3>Baconator</h3>
+                    <img src="img/bacon.png" alt="Baconator">
+                    <p>15$</p>
+                    <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+                </div>
             </div>
-            <div class="box">
-                <h3>Juicy Double</h3>
-                <img src="img/juicy.png" alt="Juicy Double">
-                <p>15$</p>
-                <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+    
+            <h2>Vegan</h2>
+            <div class = "vegan" id="vegan">
+                <div class="box">
+                    <h3>Classic Sandwich</h3>
+                    <img src="img/classicS.png" alt="Classic Sandwich">
+                    <p>15$</p>
+                    <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <h3>Omelette Sandwich</h3>
+                    <img src="img/omelette.png" alt="Omelette Sandwich">
+                    <p>15$</p>
+                    <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <h3>Egg Sandwich</h3>
+                    <img src="img/egg.png" alt="Egg Sandwich">
+                    <p>15$</p>
+                    <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+                </div>
             </div>
-            <div class="box">
-                <h3>Baconator</h3>
-                <img src="img/bacon.png" alt="Baconator">
-                <p>15$</p>
-                <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+    
+            <h2>Chicken</h2>
+            <div class = "chicken" id="chicken">
+                <div class="box">
+                    <h3>Avocado Crunch</h3>
+                    <img src="img/avocado.png" alt="Avocado Crunch">
+                    <p>15$</p>
+                    <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <h3>Spicy Salsa</h3>
+                    <img src="img/salsa.png" alt="Spicy Salsa">
+                    <p>15$</p>
+                    <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <h3>Classic Chicken</h3>
+                    <img src="img/classicC.png" alt="Classic Chicken">
+                    <p>15$</p>
+                    <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+                </div>
+            </div>
+    
+            <h2>Fries</h2>
+            <div class = "fries" id="fries">
+                <div class="box">
+                    <h3>Potato Fries</h3>
+                    <img src="img/potato.png" alt="Potato Fries">
+                    <p>6$</p>
+                    <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <h3>Sweet Potato Fries</h3>
+                    <img src="img/sweetPotato.png" alt="Sweet Potato Fries">
+                    <p>6$</p>
+                    <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+                </div>
+            </div>
+    
+            <h2>Drinks</h2>
+            <div class = "drinks" id="drinks">
+                <div class="box">
+                    <h3>Coca-Cola</h3>
+                    <img src="img/coke.png" alt="Coca-Cola">
+                    <p>5$</p>
+                    <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <h3>Fanta</h3>
+                    <img src="img/fanta.png" alt="Fanta">
+                    <p>5$</p>
+                    <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <h3>Sprite</h3>
+                    <img src="img/sprite.png" alt="Sprite">
+                    <p>5$</p>
+                    <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
+                </div>
             </div>
         </div>
-
-        <h2>Vegan</h2>
-        <div class = "vegan" id="vegan">
-            <div class="box">
-                <h3>Classic Sandwich</h3>
-                <img src="img/classicS.png" alt="Classic Sandwich">
-                <p>15$</p>
-                <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
-            </div>
-            <div class="box">
-                <h3>Omelette Sandwich</h3>
-                <img src="img/omelette.png" alt="Omelette Sandwich">
-                <p>15$</p>
-                <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
-            </div>
-            <div class="box">
-                <h3>Egg Sandwich</h3>
-                <img src="img/egg.png" alt="Egg Sandwich">
-                <p>15$</p>
-                <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
-            </div>
-        </div>
-
-        <h2>Chicken</h2>
-        <div class = "chicken" id="chicken">
-            <div class="box">
-                <h3>Avocado Crunch</h3>
-                <img src="img/avocado.png" alt="Avocado Crunch">
-                <p>15$</p>
-                <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
-            </div>
-            <div class="box">
-                <h3>Spicy Salsa</h3>
-                <img src="img/salsa.png" alt="Spicy Salsa">
-                <p>15$</p>
-                <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
-            </div>
-            <div class="box">
-                <h3>Classic Chicken</h3>
-                <img src="img/classicC.png" alt="Classic Chicken">
-                <p>15$</p>
-                <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
-            </div>
-        </div>
-
-        <h2>Fries</h2>
-        <div class = "fries" id="fries">
-            <div class="box">
-                <h3>Potato Fries</h3>
-                <img src="img/potato.png" alt="Potato Fries">
-                <p>6$</p>
-                <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
-            </div>
-            <div class="box">
-                <h3>Sweet Potato Fries</h3>
-                <img src="img/sweetPotato.png" alt="Sweet Potato Fries">
-                <p>6$</p>
-                <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
-            </div>
-        </div>
-
-        <h2>Drinks</h2>
-        <div class = "drinks" id="drinks">
-            <div class="box">
-                <h3>Coca-Cola</h3>
-                <img src="img/coke.png" alt="Coca-Cola">
-                <p>5$</p>
-                <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
-            </div>
-            <div class="box">
-                <h3>Fanta</h3>
-                <img src="img/fanta.png" alt="Fanta">
-                <p>5$</p>
-                <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
-            </div>
-            <div class="box">
-                <h3>Sprite</h3>
-                <img src="img/sprite.png" alt="Sprite">
-                <p>5$</p>
-                <button type="button" onclick="itemAmount()" class="addToCart">ADD TO CART</button>
-            </div>
-        </div>
-    </div>
+    </main>
 
     <div class="footer" id="footer"></div>
     <script src="script.js"></script>
