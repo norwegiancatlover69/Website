@@ -513,7 +513,7 @@ input{
 }
 
 /*TOP NAVBAR*/
-.topnav {
+#topnav {
     position:relative;
     width:100vw;
     background-color: white;
@@ -521,10 +521,8 @@ input{
     display:grid;
     grid-template-columns: 13.5vw 5.5vw 13.5vw 13.5vw 13.5vw 13.5vw 13.5vw 13.5vw;
     grid-template-rows: 100px;
-    grid-column:2;   
 }
-
-.topnav a {
+#topnav a {
     color: #DB8249;
     font-size:140%;
     text-decoration: none;
@@ -532,64 +530,114 @@ input{
     width:100%;
     transition: transform .3s ease;
 }
-
 .logoLink:hover .logo {
     transform: scale(1.15);
 }
-
-.logo {
+#topnav .logoLink .logo {
     height:80px;
     grid-column:1;
+    grid-row:1;
     margin-left:5px;
     transition: transform .3s ease;
     margin-top: 6px;
     margin-left:14px;
 }
-
 .topnav a:hover:not(.logoLink) {
     transform: scale(1.15);
 }
-.l1 {
+#topnav .l1 {
     grid-column: 3;
     padding: 35px 0 0 0;
 }
-.l2 {
+#topnav .l2 {
     grid-column: 4;
     padding: 35px 0 0 0;
 }
-.l3 {
+#topnav .l3 {
     grid-column: 5;
     padding: -1vh 0 -1vh 0;
     padding: 25px 0 0 0;
 }
-.l4 {
+#topnav .l4 {
     grid-column: 6;
     padding: 35px 0 0 0;
 
 }
-.l5 {
+#topnav .l5 {
     grid-column: 7;
     padding: 35px 0 0 0;
 }
-.l6 {
+#topnav .l6 {
     grid-column: 8;
     padding: 25px 0 0 0;
 }
 
-.leftnav {
+/* SIDE NAVBAR */
+.leftnavIcon {
     cursor:pointer;
     font-size: 50px;
     display:none;
-    width:50px;
-    height:50px;
-    background-color: black;
+    color:black;
+    margin-left: 20px;
 }
 
-@media only screen and (max-width: 900px) {
-    .topnav {
-        display: none;
+@media only screen and (max-width: 700px) {
+    .leftnavIcon {
+        display: block;
     }
-}.
+}
+
+#leftnav {
+    width:0;
+    background-color: white;
+    z-index: 2;
+    display:grid;
+    grid-template-rows: 22vh 13vh 13vh 13vh 13vh 13vh 13vh;
+    position:absolute;
+    height:100vh
+}
+#leftnav a {
+    width: 0;
+    color: #DB8249;
+    font-size:140%;
+    text-decoration: none;
+    text-align:center;
+    transition: transform .3s ease;
+    display:none;
+}
+#leftnav .logoLink .logo {
+    width:0;
+    height:80px;
+    grid-row:1;
+    margin-left:5px;
+    transition: transform .3s ease;
+}
+#leftnav .l1 {
+    grid-row: 2;
+    padding: 35px 0 0 0;
+}
+#leftnav .l2 {
+    grid-row: 3;
+    padding: 35px 0 0 0;
+}
+#leftnav .l3 {
+    grid-row: 4;
+    padding: -1vh 0 -1vh 0;
+    padding: 25px 0 0 0;
+}
+#leftnav .l4 {
+    grid-row: 5;
+    padding: 35px 0 0 0;
+
+}
+#leftnav .l5 {
+    grid-row: 6;
+    padding: 35px 0 0 0;
+}
+#leftnav .l6 {
+    grid-row: 7;
+    padding: 25px 0 0 0;
+}
 
 /*MENU*/
 .sidenav {
