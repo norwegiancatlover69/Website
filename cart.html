@@ -8,55 +8,57 @@
 </head>
 <body>
     <div class="topnav" id="topnav"></div>
-    <div class="background-gray">
-        <div class="options">
-            <div id="pickup">
-                <label for="pickup">Pay On Pickup</label>
-                <input type="radio" value="pay_on_pickup" name="pay-method">
-            </div>
-            <div id="now">
-                <label for="now">Pay Now</label>
-                <input type="radio" value="pay_now" name="pay-method">
-            </div>
-        </div>
-        <br>
-        <form class="form">
-        
-            <div id="names">
-                <div id="firstname">
-                    <label for="firstname" id="firstname-label">First name:</label><br>
-                    <input type="text" name="firstname" placeholder="First Name" class="name-input" required>
+    <main>
+        <div class="background-gray">
+            <div class="options">
+                <div id="pickup">
+                    <label for="pickup">Pay On Pickup</label>
+                    <input type="radio" value="pay_on_pickup" name="pay-method">
                 </div>
-
-                <div id="lastname">
-                    <label for="lastname">Last name:</label><br>
-                    <input type="text" name="lastname" placeholder="Last Name" class="name-input" required><br>
+                <div id="now">
+                    <label for="now">Pay Now</label>
+                    <input type="radio" value="pay_now" name="pay-method">
                 </div>
             </div>
+            <br>
+            <form class="form">
             
-            <div id="email">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="Email Adress" required>
-            </div>
-
-            <label for="credit">Credit Card:</label><br>
-            <div id="credit-card">
-                <input id="credit" name="credit" type="tel" inputmode="numeric" maxlength="19" placeholder="Card Number" required>
-                <input id="credit-year" name="credit-year" type="tel" inputmode="numeric" maxlength="7" placeholder="MM / YY" size="7" required>
-                <input id="credit-cvc" name="credit-cvc" type="tel" inputmode="numeric" maxlength="3" placeholder="CVC" size="3" required><br>
-            </div>
-
-            <div id="billing-address">
-                <label for="billing">Billing Address:</label>
-                <input type="text" id="billing" name="billing" placeholder="Address Line 1:" required>
-                <input type="text" id="billing-two" name="billing-two" placeholder="Address Line 2:">
-            </div>
-
-            <div id="submit-div">
-                <input style="font-family: passionone;" type="submit" id="submit" name="submit" value="CONFIRM ORDER">
-            </div>
-        </form>
-    </div>
+                <div id="names">
+                    <div id="firstname">
+                        <label for="firstname" id="firstname-label">First name:</label><br>
+                        <input type="text" name="firstname" placeholder="First Name" class="name-input" required>
+                    </div>
+    
+                    <div id="lastname">
+                        <label for="lastname">Last name:</label><br>
+                        <input type="text" name="lastname" placeholder="Last Name" class="name-input" required><br>
+                    </div>
+                </div>
+                
+                <div id="email">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Email Adress" required>
+                </div>
+    
+                <label for="credit">Credit Card:</label><br>
+                <div id="credit-card">
+                    <input id="credit" name="credit" type="tel" inputmode="numeric" maxlength="19" placeholder="Card Number" required>
+                    <input id="credit-year" name="credit-year" type="tel" inputmode="numeric" maxlength="7" placeholder="MM / YY" size="7" required>
+                    <input id="credit-cvc" name="credit-cvc" type="tel" inputmode="numeric" maxlength="3" placeholder="CVC" size="3" required><br>
+                </div>
+    
+                <div id="billing-address">
+                    <label for="billing">Billing Address:</label>
+                    <input type="text" id="billing" name="billing" placeholder="Address Line 1:" required>
+                    <input type="text" id="billing-two" name="billing-two" placeholder="Address Line 2:">
+                </div>
+    
+                <div id="submit-div">
+                    <input style="font-family: passionone;" type="submit" id="submit" name="submit" value="CONFIRM ORDER">
+                </div>
+            </form>
+        </div>
+    </main>
     <div class="footer" id="footer"></div>
     <script src="script.js"></script>
 </body>
