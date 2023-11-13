@@ -49,8 +49,8 @@ check1.addListener(change1100);
 //Query for max width 700px
 function change700(check2) {
     if (check2.matches) {
-        closeNav();
         document.getElementById("topnav").setAttribute("id", "leftnav");
+        closeNav();
         document.getElementById("logo").setAttribute("src", "img/frydays.png");
         document.getElementById("leftnavIcon").style.display="block";
         document.getElementById("burger").style.width = "230px";
@@ -72,11 +72,13 @@ function change700(check2) {
         document.getElementById("box3Chicken").style.marginLeft = "0";
         document.getElementById("box3Drinks").style.marginLeft = "112.5px";
     }
-    else if (document.getElementById("leftnav")) {
-        openNav();
-        document.getElementById("leftnav").setAttribute("id", "topnav");
+    else {
+        if (document.getElementById("leftnav")) {
+            openNav();
+            document.getElementById("leftnav").setAttribute("id", "topnav");
+            document.getElementById("closebtn").style.display="none";
+        }
         document.getElementById("logo").setAttribute("src", "img/frydaysNew.png");
-        document.getElementById("closebtn").style.display="none";
         document.getElementById("burger").style.width = "565px";
         document.getElementById("vegan").style.width = "565px";
         document.getElementById("chicken").style.width = "565px";

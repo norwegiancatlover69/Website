@@ -743,6 +743,7 @@ textarea{
     grid-template-rows: 20vh 13vh 13vh 13vh 13vh 13vh 13vh;
     position:absolute;
     height:100vh;
+    top:0;
 }
 #leftnav a {
     color: #DB8249;
