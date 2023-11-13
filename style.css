@@ -787,16 +787,17 @@ textarea{
 }
 
 /*MENU*/
+/*SIDENAV*/
 .sidenav {
     text-align: center;
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 15%; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 0; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 0;
+    top: 0;
     right: 0;
-    background-color: #C30000; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
+    background-color: #C30000;
+    overflow-x: hidden;
     padding-top: 130px;
 }
 
@@ -810,78 +811,114 @@ textarea{
     font-size: 25px;
     color: #DB8249;
     display: block;
-  }
+}
+/*CARTBUTTON*/
+.cartButton {
+height:4.5vh;
+width:60%;
+font-size:2.8vh;
+padding: 10px;
+border-radius: 10px;
+background-color: #D9D9D9;
+color:black;
+text-decoration: none;
+display: flex;
+justify-content:space-around;
+margin: 5vh auto 5vh auto;
+position:relative;
+}
+.cartButton p {
+margin-top: .7vh;
+width:50vw;
+}
 
-  .cartButton {
-    height:4.5vh;
-    width:60%;
-    font-size:2.8vh;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #D9D9D9;
-    color:black;
-    text-decoration: none;
-    display: flex;
-    justify-content:space-around;
-    margin: 5vh auto 5vh auto;
-    position:relative;
-  }
-  .cartButton p {
-    margin-top: .7vh;
-    width:50vw;
-  }
+.cartImg {
+height:100%;
+}
 
-  .cartImg {
-    height:100%;
-  }
+.cartItems {
+position:absolute;
+left:7vw;
+top:-3.5vh;
+background-color: white;
+border-radius: 100%;
+padding:1vh .85vw;
+}
 
-  .cartItems {
-    position:absolute;
-    left:7vw;
-    top:-3.5vh;
-    background-color: white;
-    border-radius: 100%;
-    padding:1vh .85vw;
-  }
+/*MENU ITEMS*/
+.box2 {
+margin-left:105px;
+}
+.box3 {
+margin-left:105px;
+}
+.box1,
+.box2,
+.box3 {
+width:230px;
+float:left;
+}
+.menu h2 {
+font-size:55px;
+margin-bottom:-10px;
+}
 
-  .box button {
-    color:white;
-    font-weight:600;
-    background-color: #C30000;
-    border: 0;
-    padding: 10px;
-    border-radius: 25px;
-    cursor: pointer;
-  }
+.box1 button,
+.box2 button,
+.box3 button {
+color:white;
+font-weight:600;
+background-color: #C30000;
+border: 0;
+padding: 10px;
+border-radius: 25px;
+cursor: pointer;
+}
 
-  .box p {
-    font-size: 30px;
-  }
-
+.box1 p,
+.box2 p,
+.box3 p {
+font-size: 30px;
+}
 .burger,
 .vegan,
 .chicken,
 .fries,
 .drinks {
-    display: flex;
-    justify-content: center;
-    gap: 110px;
-  }
+    margin-left: auto;
+    margin-right: auto;
+    width:900px;
+    height:388.75px;
+    position:relative;
+}
+.fries {
+    width:565px;
+}
 
-  .menu{
+.menu{
    text-align: center;
    width:85%;
-  }
+}
 
-.burger .box img,
-.vegan .box img,
-.chicken .box img,
-.fries .box img {
+.box1 img,
+.box2 img,
+.box3 img {
     width:230px;
 }
-.drinks .box img {
+.drinks {
+    height:599.61px;
+    width: 570px;
+}
+.drinks .box1 img,
+.drinks .box2 img,
+.drinks .box3 img,
+.drinks .box1,
+.drinks .box2,
+.drinks .box3 {
     width:120px;
 }
-.drinks .box button {
+.drinks .box1 button,
+.drinks .box2 button,
+.drinks .box3 button {
     margin-bottom: 70px;
 }
