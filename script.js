@@ -46,6 +46,7 @@ function change1100(check1) {
         }
     }
 }
+//Check for min width 1100px
 var check1 = window.matchMedia("(max-width: 1100px)");
 change1100(check1);
 check1.addListener(change1100);
@@ -109,6 +110,7 @@ function change700(check2) {
         }
     }
 }
+//Check for max width 700px
 var check2 = window.matchMedia("(max-width: 700px)");
 change700(check2);
 check2.addListener(change700);
@@ -140,31 +142,17 @@ function closeNav() {
     document.getElementById("logoLink").style.display= "none";
 }
 
+//Query for min width 1100px
 function change1100plus(check3) {
     if (check3.matches) {
         document.getElementById("logo").setAttribute("src", "img/frydays.png");
+        change1100(check1);
     }
 }
+//Check for min width 1100px
 var check3 = window.matchMedia("(min-width: 1100px)");
 change1100plus(check3);
 check3.addListener(change1100plus);
-
-window.onload = function() {
-    if (window.matchMedia("(max-width: 1100px)").matches == true) {
-        if (window.matchMedia("(max-width: 700px)").matches == true) {
-            change700(check2);
-            check2.addListener(change700);
-        }
-        else {
-            change1100(check1);
-            check1.addListener(change1100);
-        }
-    }
-    else {
-        change1100(check1);
-        check1.addListener(change1100);
-    }
-};
 
 // Updating counter on total menu items
 counter = 0; 
