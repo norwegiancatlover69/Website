@@ -11,6 +11,24 @@
     <div class="topnav" id="topnav"></div>
     <main>
         <div class="background-gray">
+            <div id = "cartSummary">
+                <ul class = "foodItems"> 
+                    <li class = "item">
+                        <span class ="ItemName">Avocado Crunch</span>
+                        <input type="number" min = "1">
+                        <input type = "button" value="REMOVE">
+                        <span class = "itemValue">15$</span>
+                    </li>
+                </ul>
+                <hr id = "cartLine">
+                <div id="underTheLine">
+                    <span id ="studentQuestion">
+                        <label>Are you a student?</label>
+                        <input type="radio" value="student" name ="student">
+                    </span>
+                    <span id = "total">Total: 15$</span>
+                </div>
+            </div>
             <div class="options">
                 <div id="pickup">
                     <label for="pickup">Pay On Pickup</label>
