@@ -17,29 +17,33 @@ if (title == "Cart") {
 //TOPNAV AND MENU MEDIA QUERIES
 //Query for max width 1100px
 function change1100(check1) {
-    if (check1.matches) { 
+    if (check1.matches) {
         document.getElementById("logo").setAttribute("src", "img/frydaysNew.png");
-        document.getElementById("burger").style.width = "565px";
-        document.getElementById("vegan").style.width = "565px";
-        document.getElementById("chicken").style.width = "565px";
-        document.getElementById("burger").style.height = "777.5px";
-        document.getElementById("vegan").style.height = "777.5px";
-        document.getElementById("chicken").style.height = "777.5px";
-        document.getElementById("box3Burger").style.marginLeft = "167.5px";
-        document.getElementById("box3Vegan").style.marginLeft = "167.5px";
-        document.getElementById("box3Chicken").style.marginLeft = "167.5px";
+        if (title == "Menu") {
+            document.getElementById("burger").style.width = "565px";
+            document.getElementById("vegan").style.width = "565px";
+            document.getElementById("chicken").style.width = "565px";
+            document.getElementById("burger").style.height = "777.5px";
+            document.getElementById("vegan").style.height = "777.5px";
+            document.getElementById("chicken").style.height = "777.5px";
+            document.getElementById("box3Burger").style.marginLeft = "167.5px";
+            document.getElementById("box3Vegan").style.marginLeft = "167.5px";
+            document.getElementById("box3Chicken").style.marginLeft = "167.5px";
+        }
     }
     else {
         document.getElementById("logo").setAttribute("src", "img/frydays.png");
-        document.getElementById("burger").style.width = "900px";
-        document.getElementById("vegan").style.width = "900px";
-        document.getElementById("chicken").style.width = "900px";
-        document.getElementById("burger").style.height = "388.75px";
-        document.getElementById("vegan").style.height = "388.75px";
-        document.getElementById("chicken").style.height = "388.75px";
-        document.getElementById("box3Burger").style.marginLeft = "105px";
-        document.getElementById("box3Vegan").style.marginLeft = "105px";
-        document.getElementById("box3Chicken").style.marginLeft = "105px";
+        if (title == "Menu") {
+            document.getElementById("burger").style.width = "900px";
+            document.getElementById("vegan").style.width = "900px";
+            document.getElementById("chicken").style.width = "900px";
+            document.getElementById("burger").style.height = "388.75px";
+            document.getElementById("vegan").style.height = "388.75px";
+            document.getElementById("chicken").style.height = "388.75px";
+            document.getElementById("box3Burger").style.marginLeft = "105px";
+            document.getElementById("box3Vegan").style.marginLeft = "105px";
+            document.getElementById("box3Chicken").style.marginLeft = "105px";   
+        }
     }
 }
 var check1 = window.matchMedia("(max-width: 1100px)");
@@ -49,54 +53,60 @@ check1.addListener(change1100);
 //Query for max width 700px
 function change700(check2) {
     if (check2.matches) {
-        document.getElementById("topnav").setAttribute("id", "leftnav");
-        closeNav();
         document.getElementById("logo").setAttribute("src", "img/frydays.png");
-        document.getElementById("leftnavIcon").style.display="block";
-        document.getElementById("burger").style.width = "230px";
-        document.getElementById("vegan").style.width = "230px";
-        document.getElementById("chicken").style.width = "230px";
-        document.getElementById("fries").style.width = "230px";
-        document.getElementById("drinks").style.width = "345px";
-        document.getElementById("burger").style.height = "1166.25px";
-        document.getElementById("vegan").style.height = "1166.25px";
-        document.getElementById("chicken").style.height = "1166.25px";
-        document.getElementById("fries").style.height = "777.5px";
-        document.getElementById("drinks").style.height = "1199.22px";
-        document.getElementById("box2Burger").style.marginLeft = "0";
-        document.getElementById("box2Vegan").style.marginLeft = "0";
-        document.getElementById("box2Chicken").style.marginLeft = "0";
-        document.getElementById("box2Fries").style.marginLeft = "0";
-        document.getElementById("box3Burger").style.marginLeft = "0";
-        document.getElementById("box3Vegan").style.marginLeft = "0";
-        document.getElementById("box3Chicken").style.marginLeft = "0";
-        document.getElementById("box3Drinks").style.marginLeft = "112.5px";
+        if (document.getElementById("topnav")) {
+            document.getElementById("topnav").setAttribute("id", "leftnav");
+            document.getElementById("leftnavIcon").style.display="block";
+            closeNav();
+        }
+        if (title == "Menu") {
+            document.getElementById("burger").style.width = "230px";
+            document.getElementById("vegan").style.width = "230px";
+            document.getElementById("chicken").style.width = "230px";
+            document.getElementById("fries").style.width = "230px";
+            document.getElementById("drinks").style.width = "345px";
+            document.getElementById("burger").style.height = "1166.25px";
+            document.getElementById("vegan").style.height = "1166.25px";
+            document.getElementById("chicken").style.height = "1166.25px";
+            document.getElementById("fries").style.height = "777.5px";
+            document.getElementById("drinks").style.height = "1199.22px";
+            document.getElementById("box2Burger").style.marginLeft = "0";
+            document.getElementById("box2Vegan").style.marginLeft = "0";
+            document.getElementById("box2Chicken").style.marginLeft = "0";
+            document.getElementById("box2Fries").style.marginLeft = "0";
+            document.getElementById("box3Burger").style.marginLeft = "0";
+            document.getElementById("box3Vegan").style.marginLeft = "0";
+            document.getElementById("box3Chicken").style.marginLeft = "0";
+            document.getElementById("box3Drinks").style.marginLeft = "112.5px";   
+        }
     }
     else {
+        document.getElementById("logo").setAttribute("src", "img/frydaysNew.png");
         if (document.getElementById("leftnav")) {
             openNav();
             document.getElementById("leftnav").setAttribute("id", "topnav");
             document.getElementById("closebtn").style.display="none";
         }
-        document.getElementById("logo").setAttribute("src", "img/frydaysNew.png");
-        document.getElementById("burger").style.width = "565px";
-        document.getElementById("vegan").style.width = "565px";
-        document.getElementById("chicken").style.width = "565px";
-        document.getElementById("fries").style.width = "565px";
-        document.getElementById("drinks").style.width = "570px";
-        document.getElementById("burger").style.height = "777.5px";
-        document.getElementById("vegan").style.height = "777.5px";
-        document.getElementById("chicken").style.height = "777.5px";
-        document.getElementById("fries").style.height = "388.75px";
-        document.getElementById("drinks").style.height = "599.61px";
-        document.getElementById("box2Burger").style.marginLeft = "105px";
-        document.getElementById("box2Vegan").style.marginLeft = "105px";
-        document.getElementById("box2Chicken").style.marginLeft = "105px";
-        document.getElementById("box2Fries").style.marginLeft = "105px";
-        document.getElementById("box3Burger").style.marginLeft = "167.5px";
-        document.getElementById("box3Vegan").style.marginLeft = "167.5px";
-        document.getElementById("box3Chicken").style.marginLeft = "167.5px";
-        document.getElementById("box3Drinks").style.marginLeft = "105px";
+        if (title == "Menu") {
+            document.getElementById("burger").style.width = "565px";
+            document.getElementById("vegan").style.width = "565px";
+            document.getElementById("chicken").style.width = "565px";
+            document.getElementById("fries").style.width = "565px";
+            document.getElementById("drinks").style.width = "570px";
+            document.getElementById("burger").style.height = "777.5px";
+            document.getElementById("vegan").style.height = "777.5px";
+            document.getElementById("chicken").style.height = "777.5px";
+            document.getElementById("fries").style.height = "388.75px";
+            document.getElementById("drinks").style.height = "599.61px";
+            document.getElementById("box2Burger").style.marginLeft = "105px";
+            document.getElementById("box2Vegan").style.marginLeft = "105px";
+            document.getElementById("box2Chicken").style.marginLeft = "105px";
+            document.getElementById("box2Fries").style.marginLeft = "105px";
+            document.getElementById("box3Burger").style.marginLeft = "167.5px";
+            document.getElementById("box3Vegan").style.marginLeft = "167.5px";
+            document.getElementById("box3Chicken").style.marginLeft = "167.5px";
+            document.getElementById("box3Drinks").style.marginLeft = "105px";   
+        }
     }
 }
 var check2 = window.matchMedia("(max-width: 700px)");
@@ -130,6 +140,31 @@ function closeNav() {
     document.getElementById("logoLink").style.display= "none";
 }
 
+function change1100plus(check3) {
+    if (check3.matches) {
+        document.getElementById("logo").setAttribute("src", "img/frydays.png");
+    }
+}
+var check3 = window.matchMedia("(min-width: 1100px)");
+change1100plus(check3);
+check3.addListener(change1100plus);
+
+window.onload = function() {
+    if (window.matchMedia("(max-width: 1100px)").matches == true) {
+        if (window.matchMedia("(max-width: 700px)").matches == true) {
+            change700(check2);
+            check2.addListener(change700);
+        }
+        else {
+            change1100(check1);
+            check1.addListener(change1100);
+        }
+    }
+    else {
+        change1100(check1);
+        check1.addListener(change1100);
+    }
+};
 
 // Updating counter on total menu items
 counter = 0; 
