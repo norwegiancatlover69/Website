@@ -247,7 +247,9 @@ h3 {
     left: 0;
     z-index: 1;
 }
+
 /* APPLICATION FORM */
+
 #applicationForm{
     background-color: white;
     color: black;
@@ -261,8 +263,17 @@ h3 {
     margin-top: 5%;
     margin-bottom: 5%;
     font-size: large;
+}
 
-
+#applicationForm input{
+    background-color: #D9D9D9;
+    border: none;
+    font-family: passionone;
+    border-radius: 5px;
+    font-size: large;
+    padding: 5px 8px;
+    margin-bottom: 10px;
+    margin-top: 7px;
 }
 
 #applicationForm>div{
@@ -375,6 +386,71 @@ textarea{
 
 /* CART */
 
+#underTheLine{
+    margin-top: 3%;
+}
+
+#studentQuestion {
+    margin-left: 4%; 
+}
+
+#total {
+    float: right;
+    font-size: larger;
+    margin-right: 7.5%;
+}
+
+#cartSummary {
+    background-color: white;
+    margin-left: 4%;
+    margin-right: 4%;
+    height: fit-content;
+    margin-bottom: 4%;
+    color: black;
+    padding: 1% 2%; 
+    padding-bottom: 3%; 
+    
+}
+
+#cartSummary ul{
+    width: 87.5%;
+    margin-bottom: 4vh;
+}
+
+#cartSummary li{
+    width: 100%;
+
+}
+
+.itemValue {
+    float: right;
+    font-size: larger;
+}
+
+#cartSummary input[type="number"]{
+    width: 4vw; 
+    background-color: white;
+    border: black solid 2px;
+    font-family: passionone;
+    border-radius: 5px;
+    font-size: large;
+    padding: 4px 4px;
+    margin-left: 1vw;
+}
+
+#cartSummary input[type="button"]{
+    color: black;
+    font-weight: bold;
+    background-color: #D9D9D9;
+    border: 0;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px; 
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 3vw;
+}
+
 .form::placeholder{
     font-family: passionone;
 }
@@ -384,7 +460,7 @@ textarea{
     margin-left: 4%;
     margin-right: 4%;
     padding: 20px;
-    
+    color: black;
 }
 
 .name-input{
@@ -416,7 +492,7 @@ textarea{
     flex-direction: column;
 }
 
-input{
+.form input{
     background-color: #D9D9D9;
     border: none;
     font-family: passionone;
@@ -435,6 +511,7 @@ input{
     padding-right: 2%;
     border-radius: 10px;
     position: relative;
+    cursor: pointer;
 }
 
 #submit-div{
@@ -447,6 +524,7 @@ input{
     margin-left: 4%;
     display: block;
     position: relative;
+    color: black;
 }
 
 
@@ -467,6 +545,9 @@ input{
     margin-left: 12.5%;
     margin-right: 12.5%;
     height: 100vh;
+    z-index: auto;
+    padding-bottom: 20%;
+    padding-top: 5%;
 }
 
 /* FOOTER */
