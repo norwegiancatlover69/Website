@@ -1,4 +1,4 @@
-let counter = 0; 
+let counter = Object.keys(sessionStorage).length; 
 
 function addToCartClassicBurger() {
     if (sessionStorage.getItem("Classic Burger")){
