@@ -32,17 +32,17 @@ h3 {
 }
 
 .grayBox {
-    width:50vw;
-    height:45vh;
-    margin: -1vh auto 0 auto;
+    max-width:660px;
+    height:300px;
+    margin: -2vh auto 0 auto;
     background-color: #D9D9D9;
-    border-radius: 10px;
+    border-radius: 20px;
     color:black;
+    margin-bottom: 10vh;
 }
 /* CONTACT */
 #contactUsTitle{
-    margin-top: 0;
-    padding-top: 4%;
+    margin-top: 5vh;
 }
 .contactTitle {
     font-weight: bold;
@@ -50,25 +50,33 @@ h3 {
 }
 
 .contact .grayBox {
-    display:flex;
-    justify-content:space-around;
+    position:relative;
 }
 
 .contactEmail,
 .costumerService {
     margin-top: 4vh;
-    font-size: 13px;
-    line-height:2vh;
+    font-size: 16px;
+    line-height:14px;
+    position:absolute;
 }
 .contactEmail {
-    width: 40vh;
+    left: 70px;
 }
 .costumerService {
-    width: 30vh;
+    left:410px;
 }
-.contactEmail p,
-.costumerService p {
-    width:50vw;
+
+@media only screen and (max-width: 700px) {
+    .contact .grayBox {
+        height: 90vh;
+        width:400px;
+        margin-bottom: 10vh;
+    }
+    .costumerService {
+        left:70px;
+        top: 270px;
+    }
 }
 
 /* HOMEPAGE */
