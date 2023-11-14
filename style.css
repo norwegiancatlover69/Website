@@ -337,6 +337,7 @@ textarea{
     height: 50px;
     background-color: #DB8249;
     border-radius: 16px;
+    cursor: pointer;
 }
 
 /* About Us */ 
