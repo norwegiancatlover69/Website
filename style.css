@@ -427,6 +427,7 @@ textarea{
 .itemValue {
     float: right;
     font-size: larger;
+    padding-top: 1vh; 
 }
 
 #cartSummary input[type="number"]{
@@ -515,6 +516,10 @@ textarea{
     border-radius: 10px;
     position: relative;
     cursor: pointer;
+    height: 10vh; 
+    width: 14vw; 
+    margin-top: 3vh;
+    font-size: larger;
 }
 
 #submit-div{
