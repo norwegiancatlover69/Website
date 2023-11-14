@@ -318,6 +318,38 @@ h3 {
     
 }
 
+/*Apply Confirmation*/
+.applyConf .grayBox {
+    height:300px;
+    width:50vw;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:80px;
+}
+.applyConf .grayBox p {
+    padding:0 20px 0 20px;
+    font-size: 18px;
+}
+.applyConf .grayBox a {
+    color:black;
+    background-color: #DB8249;
+    text-decoration: none;
+    padding: 12px 20px 12px 20px;
+    border-radius: 10px;
+    font-size:22px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom:20px;
+}
+@media only screen and (max-width: 700px) {
+    .applyConf .grayBox a{
+        font-size: 3vw;
+        padding: 12px 2.4vw 12px 2.4vw;
+    }
+}
+
 textarea{
     background-color: #D9D9D9;
     border: none;
