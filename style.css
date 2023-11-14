@@ -319,6 +319,9 @@ h3 {
 }
 
 /*Apply Confirmation*/
+.applyConf h1 {
+    font-size:55px;
+}
 .applyConf .grayBox {
     height:300px;
     width:50vw;
