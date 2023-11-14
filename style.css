@@ -925,3 +925,44 @@ font-size: 30px;
 .drinks .box3 button {
     margin-bottom: 70px;
 }
+@media only screen and (max-width: 1100px) {
+    .burger,
+    .vegan,
+    .chicken {
+        width:565px;
+        height:777.5px;
+    }
+    #box3Burger,
+    #box3Vegan,
+    #box3Chicken {
+        margin-left:167.5px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .burger,
+    .vegan,
+    .chicken {
+        width:230px;
+        height:1166.25px;
+    }
+    .fries {
+        width:230px;
+        height:777.5px;
+    }
+    .drinks {
+        width:345px;
+        height:1199.22px;
+    }
+    #box3Drinks {
+        margin-left:112.5px;
+    }
+    #box2Burger,
+    #box2Vegan,
+    #box2Chicken,
+    #box2Fries,
+    #box3Burger,
+    #box3Vegan,
+    #box3Chicken {
+        margin-left:0;
+    }
+}
