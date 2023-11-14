@@ -39,9 +39,6 @@ h3 {
     border-radius: 10px;
     color:black;
 }
-
-
-
 /* CONTACT */
 #contactUsTitle{
     margin-top: 0;
@@ -74,8 +71,6 @@ h3 {
     width:50vw;
 }
 
-
-
 /* HOMEPAGE */
 .homepageLinkImg{
     width:500px;
@@ -86,10 +81,9 @@ h3 {
     width: 100%;
 }
 .slideshow-container {
-    max-width: 1500px;
+    max-width: 1100px;
     position: relative;
-    margin: auto;
-    padding-top: 10%;
+    margin: 10vh auto;
 }
 
 .mySlides {
@@ -98,7 +92,7 @@ h3 {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 36%;
     padding: 16px;
     color: black;
     font-weight: bold;
@@ -754,7 +748,7 @@ textarea{
     display:none;
 }
 #leftnav .logoLink .logo {
-    height:110px;
+    height:75%;
     grid-row:1;
     transition: transform .3s ease;
     display:none;
@@ -793,31 +787,30 @@ textarea{
     text-align: center;
     height: 100%;
     width: 15%;
+    min-width:150px;
     position: fixed;
-    z-index: 0;
+    z-index: 1;
     top: 0;
     right: 0;
     background-color: #C30000;
-    overflow-x: hidden;
-    padding-top: 130px;
 }
 
 .sidenav a:not(.cartButton) {
-    border: solid 2px;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    padding: 6px 8px 6px 16px;
+    border-bottom: solid 2px;
+    padding: 3.5vh 8px 3.5vh 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #DB8249;
     display: block;
 }
+.sidenavBurger {
+    border-top: solid 2px;
+}
 /*CARTBUTTON*/
 .cartButton {
-height:4.5vh;
-width:60%;
-font-size:2.8vh;
+height:25px;
+width:65%;
+font-size:17px;
 padding: 10px;
 border-radius: 10px;
 background-color: #D9D9D9;
@@ -825,25 +818,26 @@ color:black;
 text-decoration: none;
 display: flex;
 justify-content:space-around;
-margin: 5vh auto 5vh auto;
+margin: 21vh auto 3vh auto;
 position:relative;
 }
 .cartButton p {
 margin-top: .7vh;
+margin-left:-2px;
 width:50vw;
 }
 
 .cartImg {
-height:100%;
+height:28px;
 }
 
 .cartItems {
 position:absolute;
-left:7vw;
-top:-3.5vh;
+left:60%;
+top:-26px;
 background-color: white;
 border-radius: 100%;
-padding:1vh .85vw;
+padding:8px 13px;
 }
 
 /*MENU ITEMS*/
