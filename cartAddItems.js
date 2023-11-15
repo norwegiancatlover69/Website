@@ -18,4 +18,12 @@ for (let i = 0; i < Object(sessionStorage).length; i++) {
     }
 }
 
+// Removing item in cart
+
+function removeCartItem(a) {
+    let specificCartItem = a.previousElementSibling.previousElementSibling.innerHTML;
+    sessionStorage.removeItem(specificCartItem);
+    a.parentNode.remove();
+}
+
 
