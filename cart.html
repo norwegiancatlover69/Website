@@ -11,14 +11,32 @@
     <div class="topnav" id="topnav"></div>
     <main>
         <div class="background-gray">
+            <div id = "cartSummary">
+                <ul class = "foodItems"> 
+                    <li class = "item">
+                        <span class ="ItemName">Avocado Crunch</span>
+                        <input type="number" min = "1">
+                        <input type = "button" value="REMOVE">
+                        <span class = "itemValue">15$</span>
+                    </li>
+                </ul>
+                <hr id = "cartLine">
+                <div id="underTheLine">
+                    <span id ="studentQuestion">
+                        <label>Are you a student?</label>
+                        <input type="radio" value="student" name ="student">
+                    </span>
+                    <span id = "total">Total: 15$</span>
+                </div>
+            </div>
             <div class="options">
                 <div id="pickup">
-                    <label for="pickup">Pay On Pickup</label>
-                    <input type="radio" value="pay_on_pickup" name="pay-method">
+                    <label for="pay_on_pickup">Pay On Pickup</label>
+                    <input type="radio" value="pay_on_pickup" name="pay-method" id="payOnPickup">
                 </div>
                 <div id="now">
-                    <label for="now">Pay Now</label>
-                    <input type="radio" value="pay_now" name="pay-method">
+                    <label for="pay_now">Pay Now</label>
+                    <input type="radio" value="pay_now" name="pay-method" id="payNow">
                 </div>
             </div>
             <br>
@@ -41,7 +59,7 @@
                     <input type="email" id="email" name="email" placeholder="Email Adress" required>
                 </div>
     
-                <label for="credit">Credit Card:</label><br>
+                <label id="credit-card" for="credit">Credit Card:</label><br>
                 <div id="credit-card">
                     <input id="credit" name="credit" type="tel" inputmode="numeric" maxlength="19" placeholder="Card Number" required>
                     <input id="credit-year" name="credit-year" type="tel" inputmode="numeric" maxlength="7" placeholder="MM / YY" size="7" required>
@@ -62,5 +80,29 @@
     </main>
     <div class="footer" id="footer"></div>
     <script src="script.js"></script>
+
+    <!--Flyttes over i script.js-->
+    <script>
+        //Fjerner elementer med riktig IDer
+        function removeEls(idsToRemove) {
+            idsToRemove.forEach(function (id) {
+                var elementToRemove = document.getElementById(id);
+                if (elementToRemove) {
+                    elementToRemove.parentNode.removeChild(elementToRemove);
+                }
+            });
+        }
+        //Lytter til Pay on pickup
+        function removeIfChecked() {
+            var payOnPickupRadioButton = document.querySelector('input[value="pay_on_pickup"]');
+            if (payOnPickupRadioButton && payOnPickupRadioButton.checked) {
+                var IdsToRemove = ["email", "credit-card", "credit", "credit-year", "credit-cvc", "billing-address"];
+                removeEls(IdsToRemove);
+            }
+        }
+
+        removeIfChecked();
+    </script>
+       
 </body>
 </html>
