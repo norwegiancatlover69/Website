@@ -1,5 +1,13 @@
 let counter = Object.keys(sessionStorage).length; 
 
+function checkEmpty() {
+    if (counter == 0) {
+        alert("No items in cart");
+    }
+    else {
+        document.getElementById("cartButton").setAttribute("href", "cart.html");
+    }
+}
 function addToCartClassicBurger() {
     if (sessionStorage.getItem("Classic Burger")){
         alert("Product Already added in Cart");

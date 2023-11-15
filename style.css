@@ -868,6 +868,7 @@ display: flex;
 justify-content:space-around;
 margin: 21vh auto 3vh auto;
 position:relative;
+cursor:pointer;
 }
 .cartButton p {
 margin-top: .7vh;
