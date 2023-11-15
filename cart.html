@@ -12,19 +12,13 @@
     <main>
         <div class="background-gray">
             <div id = "cartSummary">
-                <ul class = "foodItems"> 
-                    <li class = "item">
-                        <span class ="ItemName">Avocado Crunch</span>
-                        <input type="number" min = "1">
-                        <input type = "button" value="REMOVE">
-                        <span class = "itemValue">15$</span>
-                    </li>
+                <ul class = "foodItems" id="foodItems">
                 </ul>
                 <hr id = "cartLine">
                 <div id="underTheLine">
                     <span id ="studentQuestion">
                         <label>Are you a student?</label>
-                        <input type="radio" value="student" name ="student">
+                        <input type="checkbox" value="student" name ="student">
                     </span>
                     <span id = "total">Total: 15$</span>
                 </div>
@@ -36,7 +30,7 @@
                 </div>
                 <div id="now">
                     <label for="now">Pay Now</label>
-                    <input type="radio" value="pay_now" name="pay-method">
+                    <input type="radio" value="pay_now" name="pay-method" checked>
                 </div>
             </div>
             <br>
@@ -79,5 +73,6 @@
     </main>
     <div class="footer" id="footer"></div>
     <script src="script.js"></script>
+    <script src="cartAddItems.js"></script>
 </body>
 </html>
