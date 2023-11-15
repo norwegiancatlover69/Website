@@ -87,14 +87,8 @@ function change1100plus(check3) {
         change1100(check1);
     }
 }
+
 //Check for min width 1100px
 var check3 = window.matchMedia("(min-width: 1100px)");
 change1100plus(check3);
 check3.addListener(change1100plus);
-
-// Updating counter on total menu items
-counter = 0; 
-function itemAmount() {
-    counter += 1; 
-    document.getElementById("cartItems").innerHTML = counter; 
-}
