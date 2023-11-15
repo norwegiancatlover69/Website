@@ -3,7 +3,7 @@ const fries = ["Potato Fries", "Sweet Potato Fries"];
 const drinks = ["Coca-Cola", "Fanta", "Sprite"];
 
 for (let i = 0; i < Object(sessionStorage).length; i++) {
-    const htmlList = '<li class = "item"><span class="itemName"></span><input class ="itemNumber" type="number" min = "0"><input type = "button" value="REMOVE"><span class="itemValue"></span></li>'
+    const htmlList = '<li class = "item"><span class="itemName"></span><input class ="itemNumber" type="number" min = "0"><input type = "button" value="REMOVE" onclick="removeCartItem(this)"><span class="itemValue"></span></li>'
     document.getElementById("foodItems").insertAdjacentHTML("beforeend", htmlList);
     document.getElementsByClassName("itemName")[i].innerHTML = Object.keys(sessionStorage)[i];
     document.getElementsByClassName("itemNumber")[i].setAttribute("value", Object.values(sessionStorage)[i]);
@@ -17,3 +17,5 @@ for (let i = 0; i < Object(sessionStorage).length; i++) {
         document.getElementsByClassName("itemValue")[i].innerHTML = "$5";
     }
 }
+
+
