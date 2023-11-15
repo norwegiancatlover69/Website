@@ -1,4 +1,7 @@
-let counter = Object.keys(sessionStorage).length; 
+let counter = 0;
+for (let i = 0; i < Object.keys(sessionStorage).length; i++) {
+    counter += parseInt(Object.values(sessionStorage)[i]);
+}
 
 function checkEmpty() {
     if (counter == 0) {
