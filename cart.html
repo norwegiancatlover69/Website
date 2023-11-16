@@ -75,5 +75,29 @@
     <div class="footer" id="footer"></div>
     <script src="script.js"></script>
     <script src="cartAddItems.js"></script>
+    
+        <!--Flyttes over i script.js-->
+    <script>
+        //Fjerner elementer med riktig IDer
+        function removeEls(idsToRemove) {
+            idsToRemove.forEach(function (id) {
+                var elementToRemove = document.getElementById(id);
+                if (elementToRemove) {
+                    elementToRemove.parentNode.removeChild(elementToRemove);
+                }
+            });
+        }
+        //Lytter til Pay on pickup
+        function removeIfChecked() {
+            var payOnPickupRadioButton = document.querySelector('input[value="pay_on_pickup"]');
+            if (payOnPickupRadioButton && payOnPickupRadioButton.checked) {
+                var IdsToRemove = ["email", "credit-card", "credit", "credit-year", "credit-cvc", "billing-address"];
+                removeEls(IdsToRemove);
+            }
+        }
+
+        removeIfChecked();
+    </script>
+    
 </body>
 </html>
