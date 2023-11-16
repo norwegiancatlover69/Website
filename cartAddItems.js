@@ -67,3 +67,15 @@ function removeItem(event) {
     calcSum();
     studentDiscount();
 }
+
+function displayPickup(){
+    document.getElementById('formContainer1').style.display = 'none';
+    document.getElementById('formContainer2').style.display = 'block';
+
+}
+
+function displayNow(){
+    document.getElementById('formContainer1').style.display = 'block';
+    document.getElementById('formContainer2').style.display = 'none';
+    
+}
