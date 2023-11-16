@@ -8,11 +8,7 @@ document.getElementById("topnav").innerHTML = '<span class="closebtn" id="closeb
 //FOOTER
 document.getElementById("footer").innerHTML = '<p class="copyright">Copyright © Frydays.com - All Rights Reserved</p><div class="social_media"><p>Follow us on social media!</p><div><button id="instagram"><img class="social_media_buttons" src="img/instagram-icon.png" alt="Instagram"></button><button id="twitter"><img class="social_media_buttons" src="img/twitter-icon.png" alt="Twitter"></button><button id="tiktok"><img class="social_media_buttons" src="img/tiktok-icon.png" alt="Tiktok"></button></div></div>';
 
-//Cart needs extra CSS
-if (title == "Cart") {
-    const cart = document.getElementById("footer");
-    cart.setAttribute("id", "footer-cart");
-}
+
 
 //TOPNAV AND MENU MEDIA QUERIES
 //Query for max width 1100px
