@@ -168,11 +168,16 @@ h3 {
     border-radius: 16px;
     width: 100%;
 }
+#containerForContainer{
+    padding: 10vh;
+}
 .slideshow-container {
     max-width: 1100px;
     position: relative;
-    margin: 10vh auto;
+    margin: auto;
+
 }
+
 .mySlides {
     display: none;
 }
@@ -561,7 +566,9 @@ textarea{
     padding-top: 1vh; 
 }
 #cartSummary input[type="number"]{
-    width: 4vw; 
+    width: 10%; 
+    max-width: 100px;
+    min-width: 50px;
     background-color: white;
     border: black solid 2px;
     font-family: passionone;
@@ -594,27 +601,64 @@ textarea{
     color: black;
 }
 .name-input{
-    width: 30vw;
+    width: 100%;
 }
-#names{
+#creditCardInfo{
+    display: flex;
+    flex-direction: column;
+    width: 100% 
+
+}
+.names{
+    width: 99%;
     display: flex;
     justify-content: space-between;
     
 }
-#email{
+.lastnameContainer{
+    width: 46%; 
+}
+.firstnameContainer{
+    width: 46%; 
+}
+.emailContainer{
     display: flex;
     flex-direction: column;
+    width: 99%
+}
+#email{
+    width: 100%;
+}
+#email2{
+    width: 100%;
 }
 #credit-card{
     display: flex;
     justify-content: space-between;
+    width:99%;
 }
-#credit{
-    width: 50vw;
+#credit-numb{
+    width: 70%;
 }
+#credit-year{
+    width: 5%;
+    min-width: 70px;
+}
+#credit-cvc{
+    width: 3%;
+    min-width: 50px;
+}
+.creditVal{
+    width: 100%;
+}
+
 #billing-address{
     display: flex;
     flex-direction: column;
+    width:99%;
+}
+.adressBill{
+    width: 100%;
 }
 .form input{
     background-color: #D9D9D9;
@@ -626,7 +670,7 @@ textarea{
     margin-bottom: 10px;
     margin-top: 7px; 
 }
-#submit{
+.submit{
     background-color:#DB8249;
     padding: 1%;
     padding-left: 2%;
@@ -634,15 +678,16 @@ textarea{
     border-radius: 10px;
     position: relative;
     cursor: pointer;
-    height: 10vh; 
-    width: 14vw; 
+    width: 15%;
+    min-width: 150px;
     margin-top: 3vh;
     font-size: larger;
 }
-#submit-div{
+.submit-div{
     display: flex;
     justify-content: center;
     margin-top: 15px;
+    
 }
 .options{
     margin-left: 4%;
@@ -659,6 +704,14 @@ textarea{
     margin-right: 12.5%;
     padding-bottom: 5%;
     padding-top: 5%;
+    min-width: 700px;
+}
+#littleOrangeLine{
+    padding-top: 5px;
+}
+
+#formContainer2{
+    display:none; 
 }
 
 
@@ -970,16 +1023,14 @@ font-size: 30px;
 #headerLoc {
     background-color: #DB8249;
     color: white;
-    padding: 0;
+
 }
 .loc_container {
-    margin-left: 13%;
-    margin-right: 13%;
-    margin-top: 5%;
-    margin-bottom: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .box_loc_content {
     background-color: #D9D9D9;
@@ -989,8 +1040,9 @@ font-size: 30px;
     border-color: #D9D9D9;
     border-width: 10px;
     border-radius: 10px;
-    padding-left: 2px;
+    padding-left: 5px;
     margin: 1%;
+    min-width: 600px;
 }
 .box_loc_titleimg p{
     color: #E25F00;
