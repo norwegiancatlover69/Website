@@ -49,11 +49,9 @@ h3 {
     font-weight: bold;
     font-size: 25px;
 }
-
 .contact .grayBox {
     position:relative;
 }
-
 .contactEmail,
 .costumerService {
     margin-top: 40px;
@@ -79,6 +77,13 @@ h3 {
         top: 270px;
     }
 }
+
+
+
+
+
+
+
 
 /* HOMEPAGE */
 .homepageLinkImg{
