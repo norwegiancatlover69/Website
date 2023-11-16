@@ -966,12 +966,6 @@ font-size: 30px;
 
 
 
-
-
-
-
-
-
 /* LOCATIONS */
 #headerLoc {
     background-color: #DB8249;
@@ -979,19 +973,24 @@ font-size: 30px;
     padding: 0;
 }
 .loc_container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
-    margin: 50px;
+    margin-left: 13%;
+    margin-right: 13%;
+    margin-top: 5%;
+    margin-bottom: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .box_loc_content {
     background-color: #D9D9D9;
-    padding-top: 0;
-    padding-right: 150px;
-    padding-bottom: 10px;
-    padding-left: 40px;
+    width: 600px;
+    height: 320px;
+    border-style: solid;
+    border-color: #D9D9D9;
+    border-width: 10px;
     border-radius: 10px;
-    position: relative; /*Lager hver boks til egen boks, og hvert element i boksen relativ til den */
+    padding-left: 2px;
+    margin: 1%;
 }
 .box_loc_titleimg p{
     color: #E25F00;
@@ -1016,11 +1015,10 @@ font-size: 30px;
 }
 .opening_hours {
     color: #E25F00;
-    position: absolute;
+    position: relative;
     font-size: 30px;
-    top: 10px;
-    right: 0;
-    left: 500px;
+    left: 400px;
+    bottom: 310px;
     width: 200px;
 }
 .opening_hours p{
