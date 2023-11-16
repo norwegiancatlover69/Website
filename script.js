@@ -53,6 +53,7 @@ var check2 = window.matchMedia("(max-width: 700px)");
 change700(check2);
 check2.addListener(change700);
 
+//Show sidenav
 function openNav() {
     document.getElementById("leftnav").style.width = "100vw";
     document.getElementById("leftnavIcon").style.display = "none";

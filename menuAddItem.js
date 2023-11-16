@@ -1,8 +1,10 @@
+//Update number of items
 let counter = 0;
 for (let i = 0; i < Object.keys(sessionStorage).length; i++) {
     counter += parseInt(Object.values(sessionStorage)[i]);
 }
 
+//Check if cart is empty
 function checkEmpty() {
     if (counter == 0) {
         alert("No items in cart");
@@ -11,6 +13,8 @@ function checkEmpty() {
         document.getElementById("cartButton").setAttribute("href", "cart.html");
     }
 }
+
+//Functions for all possible item choices and adding to sessionStorage
 function addToCartClassicBurger() {
     if (sessionStorage.getItem("Classic Burger")){
         let itemCounter = parseInt(sessionStorage.getItem("Classic Burger"));
