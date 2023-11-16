@@ -3,7 +3,7 @@
 let randNumber = Math.floor(Math.random()*11) + 10;
 //Timer
 document.getElementById("timer").innerHTML = randNumber + ":00";
-let minTimeLimit = randNumber
+let minTimeLimit = randNumber;
 let secTimeLimit = minTimeLimit * 60;
 let timer1 = document.getElementById("timer");
 //Update
