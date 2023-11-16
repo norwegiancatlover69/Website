@@ -332,6 +332,7 @@ h3 {
     flex-direction: column;
     justify-content: space-around;
     gap:80px;
+    margin-bottom: 5vh;
 }
 .applyConf .grayBox p {
     padding:0 20px 0 20px;
