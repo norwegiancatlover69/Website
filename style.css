@@ -572,27 +572,14 @@ textarea{
     position: relative;
     color: black;
 }
-
-
-.background-gray{
-    background-color: #D9D9D9;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
-    height: 100vh;
-}
-
-
 .options{
     margin-left: 4%;
 }
-
 .background-gray{
     background-color: #D9D9D9;
     margin-left: 12.5%;
     margin-right: 12.5%;
-    height: 100vh;
-    z-index: auto;
-    padding-bottom: 20%;
+    padding-bottom: 5%;
     padding-top: 5%;
 }
 
