@@ -4,60 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <title>Cart</title>
 </head>
 <body>
+    <span class="leftnavIcon" id="leftnavIcon" onclick="openNav()">&#9776;</span>
     <div class="topnav" id="topnav"></div>
-    <div class="background-gray">
-        <div class="options">
-            <div id="pickup">
-                <label for="pickup">Pay On Pickup</label>
-                <input type="radio" value="pay_on_pickup" name="pay-method">
+    <main>
+        <div class="background-gray">
+            <div id = "cartSummary">
+                <ul class = "foodItems" id="foodItems">
+                </ul>
+                <hr id = "cartLine">
+                <div id="underTheLine">
+                    <span id ="studentQuestion">
+                        <label>Are you a student? (-30%)</label>
+                        <input id="isStudent" type="checkbox" value="student" name ="student" onclick="studentDiscount()">
+                    </span>
+                    <span id = "total"></span>
+                </div>
             </div>
-            <div id="now">
-                <label for="now">Pay Now</label>
-                <input type="radio" value="pay_now" name="pay-method">
+            <div class="options">
+                <div >
+                    <label for="pickup">Pay On Pickup</label>
+                    <input type="radio" id="pickup" value="pay_on_pickup" name="pay-method" onclick="displayPickup()">
+                </div>
+                <div >
+                    <label for="now">Pay Now</label>
+                    <input id="now" type="radio" value="pay_now" name="pay-method" onclick="displayNow()" checked>
+                </div>
             </div>
-        </div>
-        <br>
-        <form class="form">
+            <br>
+            <div id="formContainer1">
+                <form class="form" id="form" action="orderConfirm.html">
+                
+                    <div class="names">
+                        <div class="firstnameContainer">
+                            <label for="firstname" >First name:</label>
+                            <input id="firstname" type="text" name="firstname" placeholder="First Name" class="name-input" required>
+                            
+                        </div>
         
-            <div id="names">
-                <div id="firstname">
-                    <label for="firstname" id="firstname-label">First name:</label><br>
-                    <input type="text" name="firstname" placeholder="First Name" class="name-input" required>
+                        <div class="lastnameContainer">
+                            <label for="lastname">Last name:</label>
+                            <input id="lastname" type="text" name="lastname" placeholder="Last Name" class="name-input" required>
+                        </div>
+                    </div>
+                    
+                    <div class="emailContainer">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Email Adress" required>
+                    </div>
+                    
+                    <div id="creditCardInfo">
+                        <label for="credit">Credit Card:</label><br>
+                        <div id="credit-card">
+                            <div id="credit-numb">
+                                <input id="credit" class="creditVal" name="credit" type="tel"  maxlength="19" placeholder="Card Number" required>
+                            </div>
+
+                            <div id="credit-year">
+                                <input class="creditVal" name="credit-year" type="tel" maxlength="7" placeholder="MM / YY" size="7" required>
+                            </div>
+
+                            <div id="credit-cvc">
+                                <input class="creditVal" name="credit-cvc" type="tel"  maxlength="3" placeholder="CVC" size="3" required>
+                            </div>
+
+                        </div>
+                    </div>
+        
+                    <div id="billing-address">
+                        <label for="billing">Billing Address:</label>
+                        <input class="adressBill" type="text" id="billing" name="billing" placeholder="Address Line 1:" required>
+                        <input class="adressBill" type="text" id="billing-two" name="billing-two" placeholder="Address Line 2:">
+                    </div>
+                </form>
+
+                <div class="submit-div">
+                        <input style="font-family: passionone;" type="submit" class="submit" name="submit" value="CONFIRM ORDER" form="form">
                 </div>
+            </div>
 
-                <div id="lastname">
-                    <label for="lastname">Last name:</label><br>
-                    <input type="text" name="lastname" placeholder="Last Name" class="name-input" required><br>
+            <div id="formContainer2">
+                <form class="form" id="form2" action="orderConfirm.html">
+
+                    <div class="names">
+                        <div class="firstnameContainer">
+                            <label for="firstname2" >First name:</label>
+                            <input id="firstname2" type="text" name="firstname" placeholder="First Name" class="name-input" required>
+                            
+                        </div>
+        
+                        <div class="lastnameContainer">
+                            <label for="lastname2">Last name:</label>
+                            <input id="lastname2" type="text" name="lastname" placeholder="Last Name" class="name-input" required>
+                        </div>
+                    </div>
+
+                    <div class="emailContainer">
+                        <label for="email2">Email Address:</label>
+                        <input type="email" id="email2" name="email" placeholder="Email Adress" required>
+                    </div>  
+
+                </form>
+
+                <div class="submit-div">
+                    <input style="font-family: passionone;" type="submit" class="submit" name="submit" value="CONFIRM ORDER" form="form2">
                 </div>
-            </div>
-            
-            <div id="email">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="Email Adress" required>
+                
+
             </div>
 
-            <label for="credit">Credit Card:</label><br>
-            <div id="credit-card">
-                <input id="credit" name="credit" type="tel" inputmode="numeric" maxlength="19" placeholder="Card Number" required>
-                <input id="credit-year" name="credit-year" type="tel" inputmode="numeric" maxlength="7" placeholder="MM / YY" size="7" required>
-                <input id="credit-cvc" name="credit-cvc" type="tel" inputmode="numeric" maxlength="3" placeholder="CVC" size="3" required><br>
-            </div>
 
-            <div id="billing-address">
-                <label for="billing">Billing Address:</label>
-                <input type="text" id="billing" name="billing" placeholder="Address Line 1:" required>
-                <input type="text" id="billing-two" name="billing-two" placeholder="Address Line 2:">
-            </div>
 
-            <div id="submit-div">
-                <input style="font-family: passionone;" type="submit" id="submit" name="submit" value="CONFIRM ORDER">
-            </div>
-        </form>
-    </div>
+
+        </div>
+        <div id="littleOrangeLine"></div>
+    </main>
     <div class="footer" id="footer"></div>
     <script src="script.js"></script>
+    <script src="cartAddItems.js"></script>
+
 </body>
 </html>
